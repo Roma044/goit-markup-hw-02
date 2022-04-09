@@ -1,1 +1,39 @@
+/* колір основного тексту #212121 */
+/* другорядний колір #757575 */
+/* вторинний колір rgba(255, 255, 255, 0.6); */
+/* білий #FFFFFF */
+/* акцент #2196F3 */
+/* основний фон #FFFFFF */
+/* хедер фон #FFFFFF */
+/* футер фон #2F303A */
 
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+
+.list {
+  list-style: none;
+}
+
+/* -------Header------- */
+
+.logo {
+  color: #2196f3;
+
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-black {
+  color: #212121;
+}
+
+.logo-white {
+  color: #ffffff;
+}
