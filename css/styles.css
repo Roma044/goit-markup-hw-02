@@ -243,6 +243,11 @@ body {
   cursor: pointer;
 }
 
+.section .button-main.current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .button-main:hover,
 .button-main:focus {
   color: var(--primary-white-color);
