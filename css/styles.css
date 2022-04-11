@@ -20,17 +20,32 @@
   --third-button-color: #f5f4fa;
 }
 
+/*-------Скриває заголовки----------  */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   background-color: var(--main-page-background-color);
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
 }
-
+/* скриваю крапки */
 .list {
   list-style: none;
 }
 
-/* -------Header------- */
+/* --------------------------Logo-------------------------- */
 
 .logo {
   color: var(--accent-color);
@@ -41,20 +56,63 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .logo-black {
   color: var(--main-text-color);
 }
 
-/* ---------Hero---------- */
+/* --------------------------Nav-------------------------- */
+
+.nav-list .link {
+  color: var(--main-text-color);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.nav-list .active {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+/* --------------------------Contact-------------------------- */
+
+.contact-list .list {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.contact-list .list:hover,
+.contact-list .list:focus {
+  color: var(--accent-color);
+}
+.contact-list .list-active {
+  color: var(--accent-color);
+}
+/* --------------------------Hero-------------------------- */
 
 .hero {
   background-color: var(--secondary-background-color);
+  color: var(--primary-white-color);
 }
 
 .hero-title {
-  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -63,15 +121,18 @@ body {
   text-transform: uppercase;
 }
 
+/* --------------------------Button-------------------------- */
+
 .hero-button {
   background-color: var(--accent-color);
 }
 
 .hero-button {
   color: var(--primary-white-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.86;
 
   cursor: pointer;
 }
@@ -82,79 +143,125 @@ body {
   color: var(--primary-white-color);
 }
 
-/* ------Nav------ */
+/* --------------------------Section-------------------------- */
 
-.site-nav .link {
+.section-proof .list {
   color: var(--main-text-color);
-  text-decoration: none;
-
-  font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.proof-title {
+  color: var(--main-text-color);
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-
-.site-nav .link-aktive {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link.active {
-  color: var(--accent-color);
-}
-
-.contact-list .link {
+/* --------------------------Параграфи-------------------------- */
+.text {
   color: var(--secondary-text-color);
-  text-decoration: none;
-
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.contact-list .list:hover,
-.contact-list .list:focus {
-  color: var(--accent-color);
-}
-
-/* -------Section-------- */
 
 .section-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* --------------------------Команда-------------------------- */
+
+.team {
+  background-color: var(--third-button-color);
 }
 
-/* ------Footer------ */
+.team-list {
+  background-color: var(--main-page-background-color);
+}
+
+.team-name {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.work-position {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+/* --------------------------Footer-------------------------- */
 
 .footer {
   background-color: var(--secondary-background-color);
-}
-
 }
 
 .logo-white {
   color: var(--primary-white-color);
 }
 
-/* -----Portfolio------ */
-.section {
-  background-color: var(--main-page-background-color);
+.address {
+  color: var(--third-button-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.19;
 }
 
-.section-button {
+.contact-list .list {
+  text-decoration: none;
+}
+.contact-list .contact-link {
+  color: var(--contact-info-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* --------------------------Portfolio-------------------------- */
+
+.button-main {
+  color: var(--main-text-color);
+  background-color: var(--third-button-color);
   font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: var(--main-text-color);
-  background-color: var(--accent-color);
+
+  cursor: pointer;
 }
-.section-button:hover,
-.section-button:focus,
-.section-button.active {
+
+.button-main:hover,
+.button-main:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
+}
+
+/* --------------------------Приклади-------------------------- */
+
+.example-title {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-list {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
