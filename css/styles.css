@@ -102,9 +102,7 @@ body {
 .contact-list .list:focus {
   color: var(--accent-color);
 }
-.contact-list .list-active {
-  color: var(--accent-color);
-}
+
 /* --------------------------Hero-------------------------- */
 
 .hero {
@@ -145,19 +143,14 @@ body {
 
 /* --------------------------Section-------------------------- */
 
-.section-proof .list {
-  color: var(--main-text-color);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+.section .title{
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
-.proof-title {
-  color: var(--main-text-color);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+
 }
 /* --------------------------Параграфи-------------------------- */
 .text {
@@ -211,24 +204,24 @@ body {
   color: var(--primary-white-color);
 }
 
-.address {
-  color: var(--third-button-color);
+.footer-adress{
+  color: var(--primary-white-color);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.19;
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 
-.contact-list .list {
+.contact-list .footer-list {
+  color: var(--secondary-text-color);
   text-decoration: none;
-}
-.contact-list .contact-link {
-  color: var(--contact-info-color);
   font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
-
 /* --------------------------Portfolio-------------------------- */
 
 .button-main {
@@ -269,4 +262,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.link-brv{
+  text-decoration: none;
 }
